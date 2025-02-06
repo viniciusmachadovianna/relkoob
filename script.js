@@ -1,0 +1,2 @@
+const readingTime = article => Math.ceil( article.textContent.trim().split(/\s+/).length / 220);
+$("time").textContent = `${readingTime($("article"))} ${readingTime($("article")) == 1 ? "min" : "mins"}`;
